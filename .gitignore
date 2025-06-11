@@ -6,7 +6,6 @@
 /storage/*.key
 /storage/pail
 /vendor
-.env
 .env.backup
 .env.production
 .phpactor.json
@@ -21,14 +20,7 @@ yarn-error.log
 /.nova
 /.vscode
 /.zed
-/composer.json
-/composer.lock
 /psalm.xml
-/docker-compose.yml
-/docker-compose.override.yml
-phpunit.xml
-/dockerfile
-/package.json
 /tailwind.config.js
 /.env.example
 /artisan
