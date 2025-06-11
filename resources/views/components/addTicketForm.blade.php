@@ -19,7 +19,7 @@
         <div class="flex flex-col">
             
             <label for="Titre" class="block text-sm font-medium text-gray-700 mb-1">Titre</label>
-            <input type="text" id="title" name="Titre_Article" class="mt-2 p-2 sm:p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required  placeholder="Titre descriptif du problème">
+            <input type="text" id="title" name="title" class="mt-2 p-2 sm:p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" required  placeholder="Titre descriptif du problème">
           </div>
           <div class="flex flex-col">
             <label for="Description" class="block text-sm font-medium text-gray-700 mb-1">Description</label>
@@ -62,7 +62,7 @@
 
           <div>
             <label for="priority" class="block text-sm font-medium text-gray-700 mb-1">Priorité*</label>
-            <select id="priority" name="ticket_priorityc" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
+            <select id="priority" name="ticket_priority" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400">
               <option value="">Sélectionnez une priorité</option>
               <option value="Haute">Haute</option>
               <option value="Moyenne">Moyenne</option>

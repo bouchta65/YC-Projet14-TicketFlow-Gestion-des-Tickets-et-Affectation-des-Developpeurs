@@ -9,8 +9,6 @@ use Illuminate\Support\Facades\Auth;
 use Carbon\Carbon;
 use App\Models\User;
 
-
-
 class TicketController extends Controller
 {
     public function addTicket(Request $request){
@@ -47,8 +45,6 @@ class TicketController extends Controller
     public function show(Request $request)
 {
     
-
-
     $filter = $request->query('filter');
 
     if ($filter == 'resolved'){
@@ -77,10 +73,6 @@ class TicketController extends Controller
         return view('client.support', $ticketsData);
         }
 
-
-
-
-
         public function showAllTickets(Request $request)
 {
     $filter = $request->query('filter');
@@ -104,20 +96,13 @@ class TicketController extends Controller
     $ticketFerme = Ticket::where('status', 'Fermé')->count();
     $allTickets = Ticket::count();
 
-
     $developers = User::where('type', 'developper')->withCount('assignments')->get();
     $unassignedTickets = Ticket::whereDoesntHave('assignments')->count();
 
     $ticketsData = compact('tickets', 'ticketEncour', 'ticketResolu', 'allTickets', 'ticketFerme','developers','unassignedTickets');
 
-
-
-        
     return view('admin.admin', $ticketsData);
 }
 
-
-
-    
 }
     
